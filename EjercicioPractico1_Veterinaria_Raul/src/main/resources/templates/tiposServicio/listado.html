@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{general/fragmentos :: head}"></head>
+
+    <body>
+
+        <header th:replace="~{general/fragmentos :: header}"></header>
+
+        <nav th:replace="~{general/fragmentos :: navbar}"></nav>
+        
+        <div class="container mt-4"
+             th:if="${mensaje != null}">
+
+            <div class="alert alert-success alert-dismissible fade show"
+                 role="alert">
+
+                <i class="bi bi-check-circle-fill"></i>
+
+                <span th:text="${mensaje}"></span>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Cerrar">
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="container mt-4"
+             th:if="${error != null}">
+
+            <div class="alert alert-danger alert-dismissible fade show"
+                 role="alert">
+
+                <i class="bi bi-exclamation-triangle-fill"></i>
+
+                <span th:text="${error}"></span>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Cerrar">
+                </button>
+
+            </div>
+
+        </div>
+
+        <section th:replace="~{tiposServicio/fragmentos :: agregar}"></section>
+
+        <section th:replace="~{tiposServicio/fragmentos :: listado}"></section>
+
+        <section th:replace="~{tiposServicio/fragmentos :: confirmarEliminar}"></section>
+
+        <footer th:replace="~{general/fragmentos :: footer}"></footer>
+
+    </body>
+</html>

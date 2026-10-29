@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{general/fragmentos :: head}"></head>
+
+    <body>
+        <header th:replace="~{general/fragmentos :: header}"></header>
+
+        <nav th:replace="~{general/fragmentos :: navbar}"></nav>
+
+        <main class="container my-5">
+
+            <div class="text-center mb-4">
+
+                <h2 style="color: #198754;">
+                    <i class="bi bi-pencil-square"></i>
+                    Modificar Tipo de Servicio
+                </h2>
+
+                <p class="text-muted">
+                    Actualizá la información del tipo de servicio veterinario.
+                </p>
+
+            </div>
+>
+            <section th:replace="~{tiposServicio/fragmentos :: editar}"></section>
+
+        </main>
+
+        <footer th:replace="~{general/fragmentos :: footer}"></footer>
+
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{general/fragmentos :: head}"></head>
+
+    <body>
+
+        <header th:replace="~{general/fragmentos :: header}"></header>
+
+        <nav th:replace="~{general/fragmentos :: navbar}"></nav>
+
+        <main>
+
+            <section class="py-5 text-white"
+                     style="background: linear-gradient(135deg, #198754, #17A2B8);">
+
+                <div class="container text-center py-4">
+
+                    <i class="bi bi-heart-pulse display-1"></i>
+
+                    <h1 class="display-4 fw-bold mt-3">
+                        Bienvenidos a Patitas Felices
+                    </h1>
+
+                    <p class="lead mt-3">
+                        Cuidamos la salud y el bienestar de tus mascotas
+                        con amor, compromiso y atención profesional.
+                    </p>
+
+                    <a th:href="@{/servicios}"
+                       class="btn btn-light btn-lg mt-3">
+
+                        <i class="bi bi-clipboard2-pulse"></i>
+                        Conocer nuestros servicios
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- NUESTROS SERVICIOS -->
+            <section class="container my-5">
+
+                <div class="text-center mb-5">
+
+                    <h2 class="fw-bold" style="color: #198754;">
+                        Nuestros Servicios
+                    </h2>
+
+                    <p class="text-muted">
+                        Ofrecemos atención integral para tus mejores amigos.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm border-0 text-center">
+
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-heart-pulse display-3"
+                                   style="color: #198754;"></i>
+
+                                <h4 class="mt-3">Consulta Veterinaria</h4>
+
+                                <p class="text-muted">
+                                    Revisiones generales, diagnósticos
+                                    y seguimiento de la salud de tus mascotas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm border-0 text-center">
+
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-shield-plus display-3"
+                                   style="color: #17A2B8;"></i>
+
+                                <h4 class="mt-3">Vacunación</h4>
+
+                                <p class="text-muted">
+                                    Protegemos a tus mascotas mediante
+                                    programas de vacunación preventiva.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm border-0 text-center">
+
+                            <div class="card-body p-4">
+
+                                <i class="bi bi-scissors display-3"
+                                   style="color: #FF9800;"></i>
+
+                                <h4 class="mt-3">Estética y Cuidado</h4>
+
+                                <p class="text-muted">
+                                    Baños, cortes y cuidados especiales
+                                    para mantener a tus mascotas saludables.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="py-5"
+                     style="background-color: #d1e7dd;">
+
+                <div class="container">
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-md-7">
+
+                            <span class="badge bg-warning text-dark mb-3">
+                                Promoción del mes
+                            </span>
+
+                            <h2 class="fw-bold" style="color: #198754;">
+                                ¡Mes del cuidado preventivo!
+                            </h2>
+
+                            <p class="lead">
+                                Durante este mes promovemos la importancia
+                                de los controles veterinarios periódicos
+                                para mantener a tus mascotas saludables.
+                            </p>
+
+                            <p>
+                                Consultá nuestras opciones de atención
+                                y conocé los servicios disponibles.
+                            </p>
+
+                            <a th:href="@{/contacto}"
+                               class="btn text-white"
+                               style="background-color: #198754;">
+
+                                <i class="bi bi-envelope"></i>
+                                Consultar promoción
+
+                            </a>
+
+                        </div>
+
+                        <div class="col-md-5 text-center">
+
+                            <i class="bi bi-balloon-heart"
+                               style="font-size: 150px; color: #198754;"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="container my-5">
+
+                <div class="text-center mb-4">
+
+                    <h2 class="fw-bold" style="color: #198754;">
+                        Consejos para el cuidado de tus mascotas
+                    </h2>
+
+                    <p class="text-muted">
+                        Aprendé más sobre la importancia de brindarles
+                        una vida saludable.
+                    </p>
+
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-9">
+
+                        <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+
+                            <iframe
+                                src="https://youtu.be/NXQjNdmSF6Y?list=RDNXQjNdmSF6Y"
+                                title="Video sobre el cuidado de mascotas"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="container my-5">
+
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body text-center p-5">
+
+                        <h3 style="color: #198754;">
+                            ¿Necesitás información?
+                        </h3>
+
+                        <p class="text-muted">
+                            Estamos para ayudarte a cuidar
+                            de quienes más querés.
+                        </p>
+
+                        <a th:href="@{/contacto}"
+                           class="btn btn-lg text-white"
+                           style="background-color: #17A2B8;">
+
+                            <i class="bi bi-chat-dots"></i>
+                            Contactanos
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer th:replace="~{general/fragmentos :: footer}"></footer>
+
+    </body>
+
+</html>
